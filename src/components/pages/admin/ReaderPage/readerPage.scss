@@ -1,0 +1,48 @@
+.toe-admin-post-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      flex: 1;
+    }
+
+    .toe-input {
+      width: 20vw;
+    }
+
+    .dropdown-filter-by-menu {
+      width: fit-content;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+
+    &-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .pi {
+        background-color: #fff;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #bbbbbb;
+      }
+    }
+
+    .pi.pi-trash {
+      display: flex;
+      align-items: center;
+      color: #ff5637;
+      cursor: pointer;
+    }
+  }
+}

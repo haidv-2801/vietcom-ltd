@@ -1,0 +1,79 @@
+.toe-sidebar {
+  --main-color: #43c1c9;
+  position: relative;
+
+  &.p-sidebar {
+    width: 25rem !important;
+  }
+
+  .btn-refresh {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+
+  .p-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 0px !important;
+  }
+
+  &__refresh {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+  }
+
+  &__title {
+    position: absolute;
+    top: 1.7rem;
+    left: 1.25rem;
+  }
+
+  &__body {
+    flex: 1;
+    overflow: auto;
+    // padding-right: 24px;
+    overflow-x: hidden;
+    // padding-top: 1.25rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+    padding: 0px 1.25rem;
+    gap: 16px;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .p-sidebar-close.p-sidebar-icon {
+    border-radius: 8px !important;
+
+    .pi {
+      font-size: 14px;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.toe-html-render-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__body {
+    flex: 1;
+    display: flex;
+    max-width: 1366px;
+    margin: auto;
+
+    &-wrapper {
+      padding: var(--padding-page);
+      min-width: 1024px;
+    }
+
+    &-right {
+      max-width: 350px;
+      min-width: 200px;
+    }
+
+    &-left {
+      flex: 1;
+      min-width: 400px;
+
+      &__title {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        color: #0d4e96 !important;
+        font-size: 20px !important;
+      }
+
+      &__content {
+        margin-top: 16px;
+
+        img {
+          max-width: 80%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

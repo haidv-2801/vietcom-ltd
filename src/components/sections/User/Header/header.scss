@@ -1,0 +1,75 @@
+.toe-layout-user-page-container__header {
+  width: 100%;
+  padding: 0px 10vw;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #e9ebee;
+  flex-shrink: 0;
+  // position: absolute;
+  z-index: 10;
+  top: 29px;
+  margin: 0 auto;
+
+  &__submenu {
+    &-dropdown {
+      min-width: 190px;
+    }
+  }
+
+  &.header--box-shadow {
+    transition: all 0.2s linear;
+    box-shadow: 0 8px 12px -10px rgb(0 0 0 / 75%);
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    & .name-app {
+      font-size: 20px;
+      margin-left: 8px;
+    }
+
+    & .logo-app {
+      height: 60px;
+    }
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    & .user-name {
+      margin-right: 8px;
+      margin-left: 16px;
+    }
+
+    & .user-avatar {
+      width: 36px;
+      height: 36px;
+      overflow: hidden;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: 1px solid #e9e5ee;
+      cursor: pointer;
+
+      & > img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .toe-test-list-btn {
+    background-color: #3740ff;
+    color: #37abf2;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0px 10px;
+  }
+}

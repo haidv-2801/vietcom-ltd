@@ -1,0 +1,58 @@
+.toe-popup-create-safe-address {
+  display: flex;
+
+  .pi {
+    color: #454545;
+  }
+
+  &__row {
+    margin-bottom: 16px;
+
+    &.--flex-center {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      & > * {
+        flex: 1;
+      }
+    }
+  }
+
+  &__left {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    flex-direction: column;
+    max-width: 150px;
+
+    .pi {
+      font-size: 14px;
+    }
+
+    &-avatar-wrapper {
+      border: 1px solid #ced4da;
+      width: 125px;
+      height: 125px;
+      border-radius: 100rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+
+      .pi {
+        font-size: 60px;
+        color: #ced4da;
+      }
+    }
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  .toe-modal__body {
+    display: flex;
+  }
+}

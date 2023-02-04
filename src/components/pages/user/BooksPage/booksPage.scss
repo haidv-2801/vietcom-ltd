@@ -1,0 +1,123 @@
+.toe-book-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__body {
+    flex: 1;
+    display: flex;
+    max-width: 1366px;
+    margin: auto;
+
+    &-wrapper {
+      flex: 1;
+      padding: var(--padding-page);
+    }
+
+    &-type {
+      margin-bottom: 16px;
+      border-left: 3px solid #267b58;
+      padding-left: 10px;
+      text-transform: uppercase;
+    }
+
+    &-main {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit);
+
+      .text-search {
+        font-size: 24px;
+      }
+    }
+
+    &-section {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 125px);
+      gap: 16px;
+
+      &__book {
+        margin-bottom: 20px;
+      }
+
+      &.js-loading {
+        gap: 16px;
+        display: flex;
+      }
+    }
+
+    &-btn {
+      .p-chip {
+        padding: 2px;
+        border-radius: 4px;
+        background-color: #ffc107;
+      }
+
+      .p-chip-text {
+        margin: 0;
+        padding: 0;
+        font-size: 11px;
+        color: #000;
+        font-weight: 700;
+        padding: 0px 3px;
+      }
+
+      .toe-btn {
+        float: right;
+        --main-color: #267b58;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    .toe-input {
+      flex: 1;
+      min-width: 150px;
+    }
+
+    &-dropdown-filter {
+      max-width: 200px;
+
+      &__wrapper {
+        width: fit-content;
+      }
+    }
+
+    &-engine {
+      margin-bottom: 16px;
+    }
+  }
+
+  .btn-show-advanced-filter {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #bbbbbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+
+  .skeleton-book {
+    margin-right: 16px;
+  }
+}

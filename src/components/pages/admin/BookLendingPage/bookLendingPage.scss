@@ -1,0 +1,159 @@
+.toe-admin-booklending-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    margin-bottom: 16px;
+
+    &:last-child {
+      flex: 1;
+    }
+
+    .toe-input {
+      width: 25vw;
+      min-width: 265px;
+    }
+
+    .dropdown-filter-by-menu {
+      width: fit-content;
+    }
+
+    &--left {
+      display: flex;
+      gap: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    &--right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-show-advanced-filter {
+      background-color: #fff;
+      position: relative;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid #bbbbbb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: #e9ecef;
+      }
+
+      svg {
+        fill: #000000;
+      }
+    }
+
+    .toe-dropdown__wrapper {
+      width: fit-content;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+
+    .pi.pi-trash {
+      display: flex;
+      align-items: center;
+      color: #ff5637;
+      cursor: pointer;
+    }
+
+    .toe-admin-booklending-page__row {
+      gap: 8px;
+    }
+  }
+
+  &__filter {
+    position: relative;
+
+    &-count {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 16px;
+      height: 16px;
+      background-color: #eb3333;
+      color: #fff !important;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-remove {
+      text-decoration: underline;
+      color: #eb3333 !important;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__popup-create-book {
+    width: calc(100% - 200px);
+    width: 732px;
+  }
+
+  .tag-table-info {
+    padding: 2px 8px;
+    border-radius: 8px;
+    width: fit-content;
+    font-weight: bold !important;
+    font-size: 12px;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+}
+
+.sidebar-filter-booklending {
+  .toe-sidebar__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    margin-bottom: 16px;
+
+    &.date {
+      display: flex;
+      gap: 16px;
+
+      .toe-font-label {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.tt-tag-table-order {
+  .ant-tooltip-inner {
+    width: 400px;
+  }
+
+  .tt-row {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.status-overlay {
+  .ant-popover-content {
+    transform: translate(-5px, 127px);
+  }
+}

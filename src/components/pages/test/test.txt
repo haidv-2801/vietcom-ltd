@@ -1,0 +1,63 @@
+  {/* <input
+        ref={fileRef}
+        type="file"
+        accept="image/*"
+        onChange={onImageChange}
+      />
+      <img src={image} width={400} height={400} /> */}
+
+      {/* <PdfDist /> */}
+      {/* <ReactPDfViewer /> */}
+      {/* <div>
+        <Document
+          file="https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0"
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
+      </div> */}
+      {/* <object
+        data="./171200038_Bui_Minh_Thao_CNTT1_K58.pdf"
+        type="application/pdf"
+      >
+        <div>No online PDF viewer installed</div>
+      </object> */}
+      {/* <embed
+        src="./171200038_Bui_Minh_Thao_CNTT1_K58.pdf"
+        width="800px"
+        height="2100px"
+      /> */}
+      {/* <iframe
+        src={
+          'https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0'
+        }
+        style={{ width: '100%', height: '100%', border: 'none' }}
+      ></iframe> */}
+      {/* <iframe
+        src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0"
+        frameBorder="0"
+        scrolling="auto"
+        height="100%"
+        width="100%"
+      ></iframe> */}
+
+      {/* <iframe
+        // src="../test/171200038_Bui_Minh_Thao_CNTT1_K58.pdf"
+        src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0"
+        frameBorder="0"
+        scrolling="auto"
+        height="100%"
+        width="100%"
+      ></iframe> */}
+      {/* <PdfDist /> */}
+
+     
+      {/* <embed
+        src={
+          'https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0'
+        }
+        type="application/pdf"
+      /> */}

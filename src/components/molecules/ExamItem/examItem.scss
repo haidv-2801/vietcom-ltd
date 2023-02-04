@@ -1,0 +1,43 @@
+.toe-exam-item {
+  width: 240px;
+  padding: 8px 8px;
+  background-color: #e2ecf2;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #bbbbbb;
+
+  &:hover {
+    transition: all 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  &__number {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #45c0c8;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    margin-left: 8px;
+    max-width: 200px;
+
+    .toe-font-label {
+      font-family: 'OpenSans-Medium', sans-serif;
+    }
+  }
+}

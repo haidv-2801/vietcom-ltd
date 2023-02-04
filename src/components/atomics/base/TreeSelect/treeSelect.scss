@@ -1,0 +1,215 @@
+.toe-treeSelect {
+  $icon-size: 12px;
+  $font-size: 14px;
+  $text-color: #454545;
+  $font: 'OpenSans-Regular', sans-serif;
+
+  // width: 20rem;
+  height: 40px;
+
+  &.p-treeselect {
+    &:focus {
+      box-shadow: none;
+      border: 1px solid var(--main-color);
+    }
+
+    &:hover {
+      border: 1px solid var(--main-color);
+    }
+
+    &:not(.p-disabled) {
+      &.p-focus {
+        box-shadow: none;
+        border: 1px solid var(--main-color);
+      }
+    }
+
+    .treeselect-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &__amount {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffc107;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .p-treeselect-label {
+    // padding: 0 !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .pi {
+    font-size: $icon-size;
+  }
+
+  &-panel {
+    .p-treenode-label {
+      width: 100%;
+
+      .treeselect-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &__amount {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          border-radius: 8px;
+          align-items: center;
+          justify-content: center;
+          margin-left: 3rem;
+          margin-right: 1rem;
+
+          background-color: #ffc107;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .p-treenode-label,
+    .p-treenode-content {
+      font-size: $font-size;
+      line-height: 20px;
+      color: $text-color;
+      font-family: 'OpenSans-Regular', sans-serif;
+    }
+
+    .treeselect-item {
+      display: flex;
+    }
+
+    .p-tree.p-component {
+      padding: 16px 24px;
+
+      .p-treenode-content {
+        padding: 0px;
+        height: 32px;
+
+        .p-tree-toggler {
+          margin-right: 0px;
+
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .p-treeselect-close.p-link {
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+
+      &:hover {
+        border-radius: 8px;
+      }
+    }
+
+    .p-treeselect-header {
+      display: none;
+    }
+
+    .p-treeselect-filter-container {
+      .p-inputtext {
+        padding: 0px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        font-size: $font-size;
+        color: $text-color;
+
+        &:enabled:focus {
+          box-shadow: none;
+          border-color: var(--main-color);
+        }
+
+        &:enabled:hover {
+          box-shadow: none;
+          border-color: var(--main-color);
+        }
+
+        &::-webkit-input-placeholder {
+          font-size: 12px;
+          color: #bbbbbb;
+        }
+      }
+    }
+
+    .p-checkbox {
+      .p-checkbox {
+        font-size: 12px;
+      }
+    }
+
+    .p-treeselect-header {
+      height: 40px;
+      padding: 0px 16px;
+    }
+
+    .pi {
+      font-size: $icon-size;
+    }
+  }
+
+  .p-dropdown {
+    &-item {
+      &__value--prefix {
+        display: flex;
+
+        .treeselect-item {
+          display: flex;
+          gap: 8px;
+        }
+
+        .p-dropdown-item__value-display {
+          display: flex;
+          margin-left: 8px;
+          font-family: 'OpenSans-SemiBold', sans-serif !important;
+        }
+      }
+    }
+  }
+
+  &--empty {
+    .toe-treeSelect-panel .p-tree.p-component {
+      display: none;
+    }
+    .p-tree.p-component.p-tree-selectable {
+      display: none;
+    }
+
+    .p-treeselect-header {
+      display: none;
+    }
+  }
+
+  &__label {
+    margin-bottom: 8px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 640px) {
+    .treeselect-demo .p-treeselect {
+      width: 100%;
+    }
+  }
+}

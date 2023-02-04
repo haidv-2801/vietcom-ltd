@@ -1,0 +1,83 @@
+body {
+  font-variant: none !important;
+  font-feature-settings: unset !important;
+}
+
+//import font
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('./static/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('./static/OpenSans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('./static/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Medium';
+  src: url('./static/OpenSans/OpenSans-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+//font class
+.toe-font-label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  font-family: 'OpenSans-Medium', sans-serif;
+}
+
+.toe-font-label-bold {
+  font-size: 14;
+  line-height: 20px;
+  color: #000000;
+  font-family: 'OpenSans-Bold', sans-serif;
+}
+
+.toe-font-body {
+  font-size: 14px;
+  line-height: 20px;
+  color: #454545;
+  font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.toe-font-body-big {
+  font-size: 26px;
+  color: #454545;
+  font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.toe-font-hint {
+  font-size: 12px;
+  line-height: 17px;
+  color: #bbbbbb;
+  font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.toe-font-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #454545;
+  font-family: 'OpenSans-Bold', sans-serif;
+}
+
+.toe-font-large-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-family: 'OpenSans-SemiBold', sans-serif;
+}

@@ -1,0 +1,12 @@
+.toe-phuocng-pdf {
+  .viewer-toolbar-right {
+    .viewer-toolbar-item {
+      &:nth-child(3) {
+        display: none;
+      }
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}

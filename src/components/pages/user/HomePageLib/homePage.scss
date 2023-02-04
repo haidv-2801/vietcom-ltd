@@ -1,0 +1,143 @@
+.toe-home-page {
+  padding: 0 10vw;
+
+  & .single-features {
+    display: flex;
+  }
+
+  h4 {
+    color: #080940;
+  }
+
+  .about {
+    height: 500px;
+  }
+
+  &__img-banner {
+    width: 100%;
+    height: 270px;
+    // height: auto;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    // margin: 16px 0px;
+    background-image: url('../../../../assets/images/thuvien_home.jpg');
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+
+    &__text {
+      font-size: 5rem;
+      color: #fff;
+      margin: auto;
+      text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &__search {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 8px;
+
+      .toe-input {
+        flex: 1;
+      }
+
+      &-dropdown-filter {
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__noti-section {
+    // padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__notificaitons {
+    flex-wrap: wrap;
+
+    &-left {
+      margin-right: 16px;
+      min-width: 300px;
+    }
+
+    &-right {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+
+      &__btn-more {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &__news {
+    &-carousel {
+      margin: auto;
+
+      .p-carousel-item {
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
+      .p-carousel-prev,
+      .p-carousel-next {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    .toe-card {
+      height: 100%;
+    }
+  }
+
+  .carousel-demo .product-item .product-item-content {
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    margin: 0.3rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .carousel-demo .product-item .product-image {
+    width: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  &__notificaitons {
+    display: flex;
+
+    &-left {
+      flex: 1;
+    }
+  }
+
+  .btn-show-advanced-filter {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #bbbbbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+
+  .event-hightlight {
+    width: 200px;
+  }
+}

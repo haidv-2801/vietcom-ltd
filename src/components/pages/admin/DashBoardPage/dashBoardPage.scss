@@ -1,0 +1,44 @@
+.toe-dashboard-page {
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    margin-bottom: 24px;
+
+    &.chart {
+      display: flex;
+      gap: 24px;
+
+      & > * {
+        flex: 1;
+      }
+    }
+
+    &.score-card {
+      display: flex;
+      gap: 24px;
+
+      & > * {
+        flex: 1;
+      }
+    }
+
+    .top-most-borrowed-book {
+      padding: 24px;
+      background-color: #fff;
+      border-radius: 4px;
+
+      &__title {
+        margin-bottom: 24px;
+      }
+
+      &__chart {
+        display: flex;
+        gap: 24px;
+        & > * {
+          flex: 1;
+        }
+      }
+    }
+  }
+}

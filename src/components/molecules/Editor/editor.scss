@@ -1,0 +1,25 @@
+.toe-editor {
+  height: 100%;
+
+  .tox-tinymce {
+    border-radius: 8px;
+    height: 100%;
+    min-height: 500px;
+  }
+
+  &__label {
+    line-height: 27px !important;
+  }
+
+  .tox-notification.tox-notification--in.tox-notification--warning {
+    display: none !important;
+  }
+
+  .tox.tox-notification--in {
+    opacity: 0 !important;
+  }
+
+  .tox-notifications-container {
+    display: none;
+  }
+}

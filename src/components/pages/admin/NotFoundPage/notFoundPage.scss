@@ -1,0 +1,23 @@
+.toe-not-found-page {
+  height: 100vh;
+  width: 100vw;
+  // background-image: url('../../../../assets/images/page-not-tound.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &__back {
+    // margin: auto;
+    // padding-top: 200px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

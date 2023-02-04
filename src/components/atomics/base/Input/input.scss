@@ -1,0 +1,106 @@
+.toe-input {
+  --main-color: #43c1c9;
+  --main-color: #0d4e96;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+
+  &-label {
+    margin-bottom: 8px;
+  }
+
+  & input::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #bbbbbb;
+  }
+
+  & .p-float-label {
+    margin-bottom: 16px;
+  }
+
+  & .p-inputtext {
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #bbbbbb;
+  }
+
+  .p-input-icon-left {
+    width: 100%;
+
+    .p-inputtext {
+      padding: 8px 35px;
+    }
+  }
+
+  & .p-password {
+    width: 100%;
+  }
+
+  & .p-inputtext:enabled:focus {
+    box-shadow: none;
+    border-color: var(--main-color);
+  }
+
+  .p-inputtext:enabled:hover {
+    box-shadow: none;
+    border-color: var(--main-color);
+  }
+
+  .p-disabled,
+  .p-component:disabled {
+    border-color: #bbbbbb;
+    background-color: #e9ebee;
+  }
+
+  & .pi.pi-eye-slash {
+    cursor: pointer;
+  }
+
+  &-warning {
+    & .p-inputtext {
+      border-color: red !important;
+
+      &:hover {
+        border-color: #ff5637;
+      }
+
+      &:active {
+        border-color: #ff5637;
+      }
+
+      &:focus {
+        border-color: #ff5637;
+      }
+    }
+  }
+
+  &-message {
+    font-size: 12px;
+    color: #ff5637;
+  }
+
+  & .pi.pi-times {
+    cursor: pointer;
+    font-size: 12px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-maxlength {
+    margin-top: 4px;
+    font-size: 12px;
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+  }
+}

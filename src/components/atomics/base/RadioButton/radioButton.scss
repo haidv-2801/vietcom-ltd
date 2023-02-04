@@ -1,0 +1,11 @@
+.toe-radio-button {
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  align-items: center;
+
+  .p-radiobutton-box.p-highlight {
+    border-color: var(--main-color);
+    background: var(--main-color);
+  }
+}

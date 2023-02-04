@@ -1,0 +1,39 @@
+.toe-header-top-bar {
+  width: 100%;
+  background-color: #0d4e96;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 10vw;
+  white-space: nowrap;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #fff;
+    padding: 4px 8px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      color: #facb01;
+    }
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

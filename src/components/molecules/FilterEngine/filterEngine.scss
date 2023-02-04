@@ -1,0 +1,88 @@
+.toe-filter-engine {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+
+  &__control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 8px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    padding: 8px;
+    cursor: pointer;
+
+    .pi-plus {
+      color: #05cf48;
+
+      &--disabled {
+        color: #bbbbbb;
+        pointer-events: none;
+      }
+    }
+
+    &:first-child {
+      flex-direction: row;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-dropdown {
+      flex-shrink: 0;
+    }
+
+    .btn-remove-control {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      right: -26px;
+      top: 0;
+      height: 100%;
+    }
+
+    &.__btn-add {
+      display: flex;
+      justify-content: space-between;
+      background-color: transparent;
+      align-items: center;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      background-color: #e9ecef;
+    }
+
+    &:first-child {
+      display: flex;
+      align-items: center;
+
+      & > * {
+        flex: 1;
+      }
+    }
+
+    .toe-input {
+      width: 100%;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+}

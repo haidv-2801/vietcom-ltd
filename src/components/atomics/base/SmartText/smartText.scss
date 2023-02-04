@@ -1,0 +1,8 @@
+.toe-smarttext {
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  & .ant-typography {
+    margin: 0;
+  }
+}

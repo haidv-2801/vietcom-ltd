@@ -1,0 +1,234 @@
+.toe-book-detail-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__body {
+    flex: 1;
+    display: flex;
+    max-width: 1366px;
+    // margin: auto;
+
+    .toe-font-label {
+      flex-shrink: 0;
+    }
+
+    &-wrapper {
+      flex: 1;
+      padding: var(--padding-page);
+    }
+
+    &-main {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+
+        &__left {
+          margin-bottom: 24px;
+        }
+      }
+
+      .__other-resource {
+        line-height: 40px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-left: 24px;
+        cursor: pointer;
+
+        &:hover {
+          color: #267b58;
+        }
+      }
+
+      &__left {
+        padding-right: 16px;
+
+        .__row {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    &-type {
+      margin-bottom: 16px;
+      border-left: 3px solid #267b58;
+      padding-left: 10px;
+      text-transform: uppercase;
+    }
+
+    &-section {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .book-detail {
+      &__infomation {
+        width: 100%;
+        border: 1px solid #bbbbbb;
+        padding: 8px 16px;
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        & > .info > * {
+          &:not(b) {
+            flex: 1;
+          }
+        }
+
+        &-col {
+          padding: 16px;
+        }
+
+        .infomation-col__title {
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 16px;
+          border-bottom: 1px solid #bbbbbb;
+          padding-bottom: 8px;
+
+          &-row {
+            .disable {
+              text-decoration: line-through;
+              color: #bbbbbb;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__book {
+    flex-shrink: 0;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex !important;
+    gap: 16px;
+
+    &-info {
+      display: flex;
+      flex: 1;
+      width: 100%;
+
+      &.warning {
+        margin-top: 16px;
+      }
+
+      &__group {
+        margin-left: 16px;
+        flex: 1;
+      }
+
+      &__block {
+        padding: 16px;
+        padding-right: 0;
+        margin-right: 16px;
+        width: 100%;
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+
+        &:first-child {
+          padding-left: 0;
+          padding-top: 0px;
+        }
+
+        &:last-child {
+          padding-bottom: 0px;
+          border-bottom: 1px solid #e5e5e5;
+        }
+      }
+
+      &__row {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        padding-left: 16px;
+
+        &.book-name {
+          margin-bottom: 24px;
+        }
+
+        &.title {
+          border-left: 5px solid #267b58;
+          padding-left: 8px;
+          font-size: 16px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #e5e5e5;
+          border-top: 1px solid #e5e5e5;
+        }
+
+        &:first-child {
+          font-size: 18px !important;
+
+          &:hover {
+            color: #267b58;
+            cursor: pointer;
+          }
+        }
+
+        margin-bottom: 8px;
+      }
+    }
+
+    h2 {
+      padding-left: 0;
+    }
+  }
+
+  .button-preview {
+    border: none;
+  }
+
+  .tag {
+    padding: 4px 8px;
+    background-color: #e5e5e5;
+    color: #454545;
+    width: fit-content;
+    border-radius: 4px;
+  }
+
+  .infomation-col__title-row__tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .text-underline {
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: italic;
+  }
+}
+
+.modal-pdf-reader {
+  &.p-dialog {
+    width: calc(100vw - 200px);
+    height: calc(100vh - 100px);
+  }
+}
+
+.btn-accept-go-cart {
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

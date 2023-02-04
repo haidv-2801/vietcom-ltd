@@ -1,0 +1,27 @@
+.toe-admin-book-page__filter {
+  position: relative;
+
+  &-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    background-color: #eb3333;
+    color: #fff !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-remove {
+    text-decoration: underline;
+    color: #eb3333 !important;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}

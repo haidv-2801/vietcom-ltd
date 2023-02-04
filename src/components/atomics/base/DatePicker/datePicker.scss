@@ -1,0 +1,119 @@
+.toe-datepicker {
+  width: 100%;
+
+  &.p-calendar-disabled {
+    background-color: #e9ebee;
+    border-radius: 8px;
+  }
+
+  &__input {
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: none !important;
+    border: 1px solid #bbbbbb !important;
+
+    //css v2
+    border-right: 0;
+
+    &:hover {
+      border: 1px solid #43c1c9 !important;
+    }
+
+    &:focus {
+      border: 1px solid #43c1c9 !important;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      color: #bbbbbb;
+      font-family: 'OpenSans-Regular', sans-serif;
+    }
+  }
+
+  &__panel {
+    .p-datepicker-calendar {
+      font-size: 14px;
+      font-family: 'OpenSans-Regular', sans-serif;
+
+      .p-datepicker-today {
+        span {
+          border-radius: 8px !important;
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      td {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+
+        span {
+          box-shadow: none !important;
+        }
+      }
+    }
+
+    .p-datepicker-header {
+      font-size: 14px;
+      font-family: 'OpenSans-Regular', sans-serif;
+
+      button {
+        box-shadow: none !important;
+      }
+
+      .pi {
+        font-size: 12px;
+      }
+    }
+
+    .p-highlight {
+      font-weight: bold;
+      // background-color: #ced4da !important;
+      border-radius: 8px;
+      width: 32px;
+      height: 32px;
+
+      background-color: #43c1c9 !important;
+      color: #ffffff !important;
+
+      &:hover {
+        border-radius: 8px !important;
+      }
+    }
+  }
+
+  &.p-inputwrapper-focus {
+    input {
+      box-shadow: none;
+    }
+  }
+
+  .p-button:enabled:hover,
+  .p-button:not(button):not(a):not(.p-disabled):hover {
+    background-color: #43c1c9;
+    border-color: transparent;
+  }
+
+  .p-button:focus {
+    box-shadow: none;
+  }
+
+  .p-button.p-button-icon-only {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #43c1c9;
+    border: 1px solid #43c1c9;
+
+    //css v2
+    padding: 0;
+    width: 40px;
+    color: #454545;
+    background-color: transparent;
+    border: 1px solid #bbbbbb;
+    border-left: none;
+  }
+}

@@ -1,0 +1,52 @@
+.toe-popup-create-book {
+  .p-dialog-content.toe-admin-book-page__popup-create-book {
+    width: 100%;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+
+      &.col-a {
+        & > * {
+          max-width: calc(50%);
+        }
+      }
+
+      &.toe-font-title {
+        border-left: 5px solid var(--main-color);
+        padding-left: 8px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .col {
+      &__label {
+        margin-bottom: 4px;
+      }
+      &__tags {
+        display: flex;
+        gap: 8px;
+      }
+      .tag {
+        white-space: nowrap;
+        padding: 4px 8px;
+        background-color: #e9ebee;
+        border-radius: 8px;
+        color: #454545;
+
+        &-remove {
+          margin-left: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .toe-modal-v2 {
+    width: calc(100% - 600px);
+  }
+}
